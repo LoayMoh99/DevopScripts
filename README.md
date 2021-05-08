@@ -2,7 +2,7 @@
 Materials that I found helpful and I used it through the semseter:
 
 ## Bash scripting and SSH videos:
-+ [**Bash Scripting Full Course 3 Hours**](https://www.youtube.com/watch?v=e7BufAVwDiM&list=WL&index=15
++ [**Bash Scripting Full Course 3 Hours**](https://www.youtube.com/watch?v=e7BufAVwDiM&list=WL&index=15)
 + [**SSH Crash Course | With Some DevOps**](https://www.youtube.com/watch?v=hQWRp-FdTpc&list=WL&index=3)
 
 ## Docker and Deployment to AWS(Videos and Courses):

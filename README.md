@@ -21,4 +21,5 @@ Materials that I found helpful and I used it through the semseter:
 
 ## Monitoring using Amazon CloudWatch:
 + [**Monitoring Resources on AWS: CloudWatch Metrics and Dashboards**](https://www.youtube.com/watch?v=9qKryBb7t6s&list=WL&index=10)
++ [**AWS "SNS + CloudWatch + EC2" - "Triggering" On Best Practice By Er. Sandip Dabre**](https://www.youtube.com/watch?v=FJOHVuM7-Cg)
 

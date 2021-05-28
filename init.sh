@@ -37,7 +37,7 @@ git clone https://github.com/LoayMoh99/flickr_frontend.git
 #pulling the backend repo:
 git clone https://github.com/LoayMoh99/Team2_backend.git
 #pulling the devops repo:
-git clone 
+git clone https://github.com/LoayMoh99/DevopScripts.git
 
 #For certbot SSL:
 '

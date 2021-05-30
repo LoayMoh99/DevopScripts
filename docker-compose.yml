@@ -9,7 +9,8 @@ services:
         image: loaymoh99/dkr-dropoids-nginx
         volumes:
           - ./nginx:/etc/nginx/conf.d
-          - ./log/nginx:/var/log/nginx     
+          - ./log/nginx:/var/log/nginx 
+          - ./letsencrypt:/etc/letsencrypt         
  #     - ./certbot/conf:/etc/nginx/ssl
         #     - ./certbot/data:/var/www/certbot
         ports:  

@@ -5,7 +5,7 @@ RUN mkdir /etc/letsencrypt
 # Delete the default welcome to nginx page.
 RUN rm /usr/share/nginx/html/*
 
-EXPOSE 80
+EXPOSE 443
 
 # Copy over the custom default configs.
 COPY default.conf /etc/nginx/conf.d/default.conf

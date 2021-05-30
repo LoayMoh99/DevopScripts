@@ -1,16 +1,16 @@
-version: "3.4"
+version: "3.3"
 services:
     nginx:
         container_name: 'nginx'
         depends_on:
           - front
           - api
-        restart: always # because it is routing traffic to our entire app
+        restart: always # because it is routing traffic to our entire app..
         image: loaymoh99/dkr-dropoids-nginx
         volumes:
           - ./nginx:/etc/nginx/conf.d
-          - ./log/nginx:/var/log/nginx 
-          - ./letsencrypt:/etc/letsencrypt         
+          - ./log/nginx:/var/log/nginx  
+
  #     - ./certbot/conf:/etc/nginx/ssl
         #     - ./certbot/data:/var/www/certbot
         ports:  

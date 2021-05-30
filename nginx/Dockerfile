@@ -1,11 +1,10 @@
-FROM nginx:alpine
-RUN apk add certbot certbot-nginx
-RUN mkdir /etc/letsencrypt
+# Pull in the from the official nginx image.
+FROM nginx
+
+EXPOSE 80
 
 # Delete the default welcome to nginx page.
 RUN rm /usr/share/nginx/html/*
-
-EXPOSE 443
 
 # Copy over the custom default configs.
 COPY default.conf /etc/nginx/conf.d/default.conf

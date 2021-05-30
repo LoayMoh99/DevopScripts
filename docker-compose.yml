@@ -43,8 +43,9 @@ services:
         #     - mongo
         #env_file:
         #   - ./api/.env
-        # volumes:
-        #   - /app/node_modules # Inside the container, don't try to override this folder, just leave as is    
+        volumes:
+          - ./../Team2_backend/src/photos
+        #  - /app/node_modules # Inside the container, don't try to override this folder, just leave as is    
     front:
         image: loaymoh99/dkr-dropoids-front
         # ports:

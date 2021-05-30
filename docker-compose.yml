@@ -8,7 +8,7 @@ services:
         restart: always # because it is routing traffic to our entire app
         image: loaymoh99/dkr-dropoids-nginx
         volumes:
-          - ./etc/nginx:/etc/nginx
+          - ./nginx:/etc/nginx/conf.d
           - ./log/nginx:/var/log/nginx     
  #     - ./certbot/conf:/etc/nginx/ssl
         #     - ./certbot/data:/var/www/certbot

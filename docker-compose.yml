@@ -45,7 +45,7 @@ services:
         #env_file:
         #   - ./api/.env
         volumes:
-          - ./:/app
+          - ./../photos:/app/src/photos
         #  - /app/node_modules # Inside the container, don't try to override this folder, just leave as is    
     front:
         image: loaymoh99/dkr-dropoids-front

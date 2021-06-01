@@ -39,10 +39,15 @@ git clone https://github.com/LoayMoh99/Team2_backend.git
 #pulling the devops repo:
 git clone https://github.com/LoayMoh99/DevopScripts.git
 
-#For certbot SSL:
+#For nginx:
 '
-sudo apt update
-sudo apt install snapd
+sudo wget http://nginx.org/keys/nginx_signing.key
+sudo apt-key add nginx_signing.key
+echo "deb http://nginx.org/packages/ubuntu xenial nginx" | sudo tee -a /etc/apt/sources.list
+echo "deb-src http://nginx.org/packages/ubuntu xenial nginx" | sudo tee -a /etc/apt/sources.list
+sudo apt-get update
+sudo apt-get install nginx
 
-
+echo "deb http://nginx.org/packages/debian/ wheezy nginx" | sudo tee -a /etc/apt/sources.list
+echo "deb-src http://nginx.org/packages/debian/ wheezy nginx" | sudo tee -a /etc/apt/sources.list
 '

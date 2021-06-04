@@ -8,13 +8,13 @@ services:
         restart: always # because it is routing traffic to our entire app..
         image: loaymoh99/dkr-dropoids-nginx2
         volumes:
-          - ./nginx:/etc/nginx/conf.d
-          - ./log/nginx:/var/log/nginx  
+          # - ./nginx:/etc/nginx/conf.d
+          - ./log/nginx:/var/log/nginx
         # expose:
         #   - 80
  #     - ./certbot/conf:/etc/nginx/ssl
         #     - ./certbot/data:/var/www/certbot
-        ports:  
+        ports:
           - '80:80'
           - '443:443'
 
@@ -30,7 +30,7 @@ services:
     #     container_name: 'mongo-db'
     #     ports:
     #         - '27017-27019:27017-27019'
-    #     volumes: 
+    #     volumes:
     #         - ./db/init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
     #         - ./db/mongo-volume:/data/db
         #env_file:
@@ -47,7 +47,7 @@ services:
         #   - ./api/.env
         # volumes:
         #   - ./../Team2_backend/src/photos:/app/src/photos
-        #  - /app/node_modules # Inside the container, don't try to override this folder, just leave as is    
+        #  - /app/node_modules # Inside the container, don't try to override this folder, just leave as is
     front:
         image: loaymoh99/dkr-dropoids-front
         # ports:

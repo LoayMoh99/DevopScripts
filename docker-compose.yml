@@ -10,8 +10,8 @@ services:
         volumes:
           - ./nginx:/etc/nginx/conf.d
           - ./log/nginx:/var/log/nginx  
-        expose:
-          - 80
+        # expose:
+        #   - 80
  #     - ./certbot/conf:/etc/nginx/ssl
         #     - ./certbot/data:/var/www/certbot
         ports:  

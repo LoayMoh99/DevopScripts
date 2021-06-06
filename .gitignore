@@ -1,0 +1,5 @@
+/nginx/dropoids_me.ca-bundle
+/nginx/dropoids_me.crt
+/nginx/dropoids_me_chain.crt
+/nginx/dropoids.csr
+/nginx/dropoids.key

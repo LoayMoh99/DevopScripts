@@ -11,7 +11,7 @@ services:
           - ./nginx:/etc/nginx/conf.d
           - ./log/nginx:/var/log/nginx
         expose:
-          - 80
+          - 443
  #     - ./certbot/conf:/etc/nginx/ssl
         #     - ./certbot/data:/var/www/certbot
         ports:

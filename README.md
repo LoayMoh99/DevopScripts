@@ -1,3 +1,12 @@
+# DevopScripts
+> Scripts to initialize a new server with user "Dev":
+
+1. To start simply run init.sh with sudo using `sudo ./init.sh`
+> This will install any needed dependencies on the server and clone needed repos! (You will need to change the repos if you want to reuse it :D)
+
+2. What's left now is to start the deployment script with `./deploy.sh`
+> But you need to change the IP address on the script to be yours and add your deploy_key or use password!
+
 # Used Materials
 Materials that I found helpful and I used it through the semseter:
 

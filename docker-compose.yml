@@ -12,39 +12,16 @@ services:
           - ./log/nginx:/var/log/nginx
         expose:
           - 443
- #     - ./certbot/conf:/etc/nginx/ssl
-        #     - ./certbot/data:/var/www/certbot
         ports:
           - '80:80'
           - '443:443'
 
-    # certbot:
-    #     image: certbot/certbot:latest
-    #     command: certonly --webroot --webroot-path=/var/www/certbot --email loay@dropoids.me --agree-tos --no-eff-email -d dropoids.me -d www.dropoids.me
-    #      volumes:
-    #         - ./certbot/conf:/etc/letsencrypt
-    #         - ./certbot/logs:/var/log/letsencrypt
-    #         - ./certbot/data:/var/www/certbot
-    # mongo:
-    #     image: mongo
-    #     container_name: 'mongo-db'
-    #     ports:
-    #         - '27017-27019:27017-27019'
-    #     volumes:
-    #         - ./db/init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
-    #         - ./db/mongo-volume:/data/db
-        #env_file:
-        #    - ./api/.env
     api:
         image: loaymoh99/dkr-dropoids-api
         # ports:
         #     - 8080:8080
         restart: on-failure
         container_name: api
-        # depends_on:
-        #     - mongo
-        #env_file:
-        #   - ./api/.env
         # volumes:
         #   - ./../Team2_backend/src/photos:/app/src/photos
         #  - /app/node_modules # Inside the container, don't try to override this folder, just leave as is

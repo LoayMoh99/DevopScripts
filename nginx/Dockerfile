@@ -6,7 +6,7 @@ EXPOSE 80
 # Delete the default welcome to nginx page.
 RUN rm /usr/share/nginx/html/*
 
-# Copy over the custom default configs.
+# Copy over the custom default configs and cerificate and private key:
 COPY default.conf /etc/nginx/conf.d/default.conf
 COPY dropoids_me_chain.crt /home/dropoids_me_chain.crt
 COPY dropoids.key /home/dropoids.key
